@@ -1,6 +1,10 @@
+import Searchbar from "../components/Searchbar.js";
+
 function Home() {
     return (
-        <div> </div>
+        <div>
+            <Searchbar/>
+        </div>
     )
 }
 
