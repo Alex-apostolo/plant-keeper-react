@@ -1,7 +1,7 @@
 import { Form, Container, Button, Row, Col } from "react-bootstrap";
 import { BiSearch } from "react-icons/bi";
 
-function Searchbar() {
+const SearchBar = () => {
   return (
     <Container>
       <Row className="mt-5 no-gutters justify-content-center">
@@ -13,12 +13,12 @@ function Searchbar() {
         </Col>
         <Col xs={1}>
           <Button variant="primary" type="submit">
-            <BiSearch/>
+            <BiSearch />
           </Button>
         </Col>
       </Row>
     </Container>
   );
-}
+};
 
-export default Searchbar;
+export default SearchBar;

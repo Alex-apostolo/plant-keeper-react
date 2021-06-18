@@ -4,10 +4,10 @@ import Header from "./components/Header.js";
 import Listings from "./pages/Listings.js";
 import CreateListing from "./pages/CreateListing.js";
 import Login from "./pages/Login.js";
-import Help from "./pages/Help.js"
+import Help from "./pages/Help.js";
 import Signup from "./pages/Signup.js";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Header />
@@ -33,6 +33,6 @@ function App() {
       </Switch>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
