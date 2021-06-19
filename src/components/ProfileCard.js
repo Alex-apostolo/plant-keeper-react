@@ -4,7 +4,7 @@ import alex from "../assets/alex.jpg";
 
 const ProfileCard = (props) => {
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "12rem"}}>
       <Card.Img variant="top" data-src="holder.js/100px180" src={alex} />
       <Card.Body>
         <Card.Title>{props.fullName}</Card.Title>
