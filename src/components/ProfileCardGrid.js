@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProfileCard from "./ProfileCard";
 
+
 const ProfileCardGrid = () => {
   const number = 48;
   const [loading, setLoading] = useState(true);
@@ -28,7 +29,7 @@ const ProfileCardGrid = () => {
                 image={user.picture.large}
                 fullName={user.name.first + " " + user.name.last}
                 city={user.location.city}
-                country={user.location.countryy}
+                country={user.location.country}
                 rating={5}
               />
             </Col>
