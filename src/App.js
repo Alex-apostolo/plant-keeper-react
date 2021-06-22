@@ -6,7 +6,7 @@ import CreateListing from "./pages/CreateListing";
 import Login from "./pages/Login";
 import Help from "./pages/Help";
 import Signup from "./pages/Signup";
-import Profile from "./pages/Profile";
+import User from "./pages/User";
 
 const App = () => {
   return (
@@ -31,8 +31,8 @@ const App = () => {
         <Route path="/signup">
           <Signup />
         </Route>
-        <Route path="/profile">
-          <Profile />
+        <Route path="/user">
+          <User />
         </Route>
       </Switch>
     </BrowserRouter>
