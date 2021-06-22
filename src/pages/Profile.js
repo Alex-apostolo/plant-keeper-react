@@ -3,10 +3,10 @@ import { useLocation } from "react-router-dom";
 
 const Profile = () => {
   const location = useLocation();
-  const [user, setUser] = useState(location.customData);
+  const [user, setUser] = useState(location.userData);
 
   useEffect(() => {
-    setUser(location.customData);
+    setUser(location.userData);
   }, [location]);
 
   return (
