@@ -12,6 +12,7 @@ const UserCardGrid = (props) => {
               className="d-flex justify-content-center mt-3 mb-3"
             >
               <UserCard
+                id={user.id}
                 image={user.image}
                 fullName={user.fullName}
                 city={user.city}

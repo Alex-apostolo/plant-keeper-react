@@ -21,7 +21,7 @@ const Home = () => {
     };
 
     const response = await fetch(
-      `https://randomuser.me/api/?results=${number}`
+      `https://randomuser.me/api/?results=${number}&seed=foobar&page=1&inc=login,picture,name,location`
     );
     const data = await response.json();
     setUsers(formatUsers(data.results));

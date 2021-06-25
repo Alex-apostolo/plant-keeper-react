@@ -1,22 +1,17 @@
-import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-
 const User = () => {
   const location = useLocation();
-  const [user, setUser] = useState(location.userData);
-
-  useEffect(() => {
-    setUser(location.userData);
-  }, [location]);
-
+  console.log(location);
+  const user = location.userData;
   return (
-      <ul>
-          <li>{user.image}</li>
-          <li>{user.fullName}</li>
-          <li>{user.city}</li>
-          <li>{user.country}</li>
-          <li>{5}</li>
-      </ul>
+    <ul>
+      <li>{user.id}</li>
+      <li>{user.image}</li>
+      <li>{user.fullName}</li>
+      <li>{user.city}</li>
+      <li>{user.country}</li>
+      <li>{user.rating}</li>
+    </ul>
   );
 };
 

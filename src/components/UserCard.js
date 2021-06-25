@@ -5,7 +5,7 @@ import Rating from "./Rating";
 const UserCard = (props) => {
   return (
     <Link
-      to={{ pathname: "/user", userData: props }}
+      to={{ pathname: `/users/${props.id}`, userData: props}}
       style={{ color: "inherit", textDecoration: "inherit" }}
     >
       <Card style={{ width: "12rem", cursor: "pointer" }}>
