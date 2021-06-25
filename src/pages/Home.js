@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { Spinner } from "react-bootstrap";
 import SearchBar from "../components/SearchBar";
 import UserCardGrid from "../components/UserCardGrid";
+import "./Home.scss";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -31,9 +33,11 @@ const Home = () => {
   useEffect(() => fetchUsers(42), []);
 
   return (
-    <div>
+    <div className="position-relative users-container">
       <SearchBar />
-      {loading && users.length === 0 && <div>Fetching users</div>}
+      {loading && users.length === 0 && (
+        <Spinner className="position-absolute spinner" animation="border" role="status" variant="secondary"/>
+      )}
       {!loading && users.length > 0 && <UserCardGrid users={users} />}
     </div>
   );
